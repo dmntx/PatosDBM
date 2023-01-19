@@ -6,11 +6,14 @@ namespace Patos
     {
         static void Main(string[] args)
         {
-            Pato pato1 = new PatoDecorativo();
-            pato1.Mostrar();
-            pato1.Graznar();
-            pato1.Volar();
-            pato1.Nadar();
+            Pato decoy = new DuckDecoy();
+            Pato patoDeHule = new Rubber();
+            Pato mallard = new Mallard();
+            Pato red = new RedHead();
+            decoy.ShowDuck(); Console.WriteLine("\n");
+            patoDeHule.ShowDuck(); Console.WriteLine("\n");
+            mallard.ShowDuck(); Console.WriteLine("\n");
+            red.ShowDuck();
         }
     }
 }

@@ -19,37 +19,37 @@ namespace Patos
             Console.WriteLine("No puedo volar");
         }
     }
-    class PatoDomestico : Pato
+    class Mallard : Pato
     {
-        public PatoDomestico() :
-            base(new GraznarComoUnPato(), new VolarConAlas())
+        public Mallard() :
+            base(new Quack(), new VolarConAlas())
         {
         }
 
         public override void Mostrar()
         {
-            Console.WriteLine("Soy un pato doméstico");
+            Console.WriteLine("Soy un Mallard");
         }
     }
 
-    class PatoDeJuguete : Pato
+    class Rubber : Pato
     {
-        public PatoDeJuguete() :
-                base(new GraznarComoUnaBocina(), new NoVolar())
+        public Rubber() :
+                base(new Squeze(), new NoVolar())
         {
         }
 
 
         public override void Mostrar()
         {
-            Console.WriteLine("Soy un pato de juguete");
+            Console.WriteLine("Soy un Rubber");
         }
     }
 
-    class PatoDecorativo : Pato
+    class DuckDecoy : Pato
     {
-        public PatoDecorativo() :
-            base(new GraznarEnSilencio(), new NoVolar())
+        public DuckDecoy() :
+            base(new Mute(), new NoVolar())
         {
 
         }
@@ -57,7 +57,22 @@ namespace Patos
 
         public override void Mostrar()
         {
-            Console.WriteLine("Soy un pato decorativo");
+            Console.WriteLine("Soy un Decoy");
+        }
+    }
+
+    class RedHead : Pato
+    {
+        public RedHead() :
+            base(new Quack(), new VolarConAlas())
+        {
+
+        }
+
+
+        public override void Mostrar()
+        {
+            Console.WriteLine("Soy un RedHead");
         }
     }
 }

@@ -13,27 +13,27 @@ namespace Patos
     {
         void Graznar();
     }
-    public class GraznarComoUnPato : IGraznar
+    public class Quack : IGraznar
     {
         public void Graznar()
         {
-            Console.WriteLine("¡Cuac, cuac!");
+            Console.WriteLine("Quack! Quack!");
         }
     }
 
-    public class GraznarComoUnaBocina : IGraznar
+    public class Squeze : IGraznar
     {
         public void Graznar()
         {
-            Console.WriteLine("¡Meec, meec!");
+            Console.WriteLine("Squeze!!!");
         }
     }
 
-    public class GraznarEnSilencio : IGraznar
+    public class Mute : IGraznar
     {
         public void Graznar()
         {
-            Console.WriteLine("");
+            Console.WriteLine("<<No hace ningun ruido>>");
         }
     }
 }

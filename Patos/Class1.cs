@@ -30,6 +30,14 @@ namespace Patos
             Console.WriteLine("Nadando");
         }
 
+        public void ShowDuck()
+        {
+            Mostrar();
+            Graznar();
+            Volar();
+            Nadar();
+        }
+
 
         public abstract void Mostrar();
     }
