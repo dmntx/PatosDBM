@@ -14,6 +14,7 @@ namespace Patos
             patoDeHule.ShowDuck(); Console.WriteLine("\n");
             mallard.ShowDuck(); Console.WriteLine("\n");
             red.ShowDuck();
+            red.ShowDuck();
         }
     }
 }
